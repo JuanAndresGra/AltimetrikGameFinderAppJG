@@ -51,6 +51,10 @@ body.light .header__logOut{
     color: white;
 }
 
+body.light .supMenu {
+    background-color: var(--neutrals-color-mink);
+}
+
 body.light footer {
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0.0001), rgb(255, 255, 255, 1) );
 }
@@ -61,6 +65,11 @@ header{
     justify-content: space-between;
     align-items: center;
     height: 94px;
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 1;
 }
 
 .header__logo{
@@ -102,7 +111,10 @@ input:focus {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1.9rem 4rem 0 4rem ;
+    padding: 9rem 4rem 0 4rem ;
+    position: fixed;
+    width: 100%;
+    background-color: var(--neutrals-color-shadow);
     
 }
 
@@ -139,6 +151,7 @@ background-color: var(--neutrals-color-fossil)
     padding: 5px;
     cursor: pointer;
     transition: .3s ease all;
+    
 }
 
 .ball{
@@ -170,8 +183,14 @@ background-color: var(--neutrals-color-fossil)
     justify-content: space-between;
     width: 95%;
     margin: 1.5rem 4rem;
+    padding-top: 1rem;
     
    
+}
+
+.nav__options{
+    position: fixed;
+    padding: 20rem 20rem 0 0;
 }
 
 .nav__options,
@@ -181,6 +200,8 @@ background-color: var(--neutrals-color-fossil)
   display: flex;
   flex-direction: column;
 }
+
+
 
 .nav__options--menu1{
     padding: 0 0 37px 0;
@@ -214,10 +235,20 @@ a {
     color: white;
 }
 
+.mainCard {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 40px;
+}
+
 .containerCard{
+    padding-top: 20rem;
+    
     display: grid;
     gap: 2.4rem;
     grid-template-columns: repeat(3, 1fr);
+    max-width: 1137px;
+    
 }
 
 .containerCard__cards{
