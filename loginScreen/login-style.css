@@ -29,27 +29,75 @@
 }
 
 body {
-  background: url(/loginScreen/resources/BG@2x.png) no-repeat center top;
-  background-size: cover;
+  max-height: 100vh;
   min-height: 100vh;
   display: grid;
+}
+
+/* style  for carousel */
+
+#contItemCarousel {
+ 
+  position: absolute;
+  overflow: hidden;
+  height: 100vh;
+  width: 100vw;
+  
+}
+
+.itemCarousel {
+ 
+  height: 100%;
+  position: relative;
+  
+}
+
+.cardCarousel {
+  background-color: aqua;
+  height: 100%;
+  
+}
+
+.imgCarousel {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.arrowCarousel{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 32px;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+}
+
+
+
+#cardCarousel1 {background-color: #36b972;}
+#cardCarousel2 {background-color: aqua;}
+#cardCarousel3 {background-color: blue;}
+#cardCarousel4 {background-color: brown;}
+#cardCarousel5 {background-color: chartreuse;}
+#cardCarousel6 {background-color: darkviolet;}
+
+header {
+  z-index: 1;
 }
 
 .header__img .header__img--svg {
   margin: 44px 0 0 54px;
 }
 
-.good {
-  display: flex;
-  flex-direction: row-reverse;
-  align-items: center;
-}
 
 .container {
   display: flex;
   flex-direction: row-reverse;
   align-items: center;
-  justify-content: space-evenly;
+  padding-right: 100px;
 }
 
 .container--loggin {
@@ -118,7 +166,7 @@ h1 {
 
 input {
   font-size: 15px;
-  font-weight: bolder;
+  font-weight: 400;
   font-style: normal;
   padding: 16px;
   
@@ -272,6 +320,10 @@ input[type="checkbox"]:checked + label:before {
   width: 43px;
 }
 
+footer {
+  z-index: 1;
+}
+
 .container__centerButton {
   display: flex;
   flex-direction: row;
@@ -292,11 +344,15 @@ input[type="checkbox"]:checked + label:before {
   align-items: center;
 }
 
+
 .slider {
-  background-color: #ffffff;
+  background: rgba(255, 255, 255, .5);
   width: 8px;
   border-radius: 50%;
   height: 8px;
-  list-style: none;
   
+}
+
+a.slider:hover{
+  background: var(--neutrals-color-snow);
 }
