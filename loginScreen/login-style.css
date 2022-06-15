@@ -156,20 +156,15 @@ h1 {
   display: block;
   border: none;
   margin: 16px auto;
-
   width: 362px;
   height: 47px;
   border-radius: 4px;
- 
-  
 }
 
 input {
   font-size: 15px;
   font-weight: 400;
-  font-style: normal;
   padding: 16px;
-  
 }
 
 .pass--eye{
@@ -178,6 +173,38 @@ input {
   background-position: right 9.16px center;
   margin: 0 20px 0 0;
 }
+
+.form-control small {
+  color: white;
+  font-size: 15px;
+  font-weight: 500;
+  display: block;
+  visibility: hidden;
+}
+
+/** Style from validation **/
+
+.form-control.success input{
+  color: #36b972;
+  
+  
+}
+
+.form-control.error input{
+  color: rgb(214, 35, 35);
+  visibility: visible;
+}
+
+.form-control.success small {
+  color: #36b972;
+  
+}
+
+.form-control.error small{
+  color: rgb(214, 35, 35);
+  visibility: visible;
+}
+
 
 .container--loggin__form input[type="checkbox"] {
   display: none;
@@ -222,6 +249,20 @@ input[type="checkbox"]:checked + label:before {
   font-size: 18px;
   font-weight: 700;
   text-decoration: none;
+}
+
+.logIn{
+  margin: auto;
+  display: block;
+  width: 362px;
+  height: 47px;
+  border-radius: 6px;
+  color: white;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 700;
+  text-decoration: none;
+  border: none;
 }
 
 .container--loggin__form .button__login .logIn {

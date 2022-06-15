@@ -157,12 +157,20 @@
             
 
             <div class="container--loggin">                
-                <form action="" class="container--loggin__form">
+                <form action="" class="container--loggin__form" id="form--login">
                     <h1 class="text1">Welcome! Log in or register<h1>
                     <p class="text2">Log in to find the games you’re looking for!</p>
-                    <input type="email" name="user" placeholder="Email">
-                    <input type="password" class="pass--eye" placeholder="Password"  />
-                
+                    
+                    <div class="form-control">
+                        <input type="email" name="user" placeholder="Email" id="email--login"  />
+                        <small id="email--login--mesagge"></small>
+                    </div>
+
+                    <div class="form-control">
+                        <input type="password" class="pass--eye" placeholder="Password" id="password--login"  />
+                        <small id="password--login--mesagge"></small>
+                    </div>
+
                         <div class="rememberForgot">
                             <input type="checkbox" id="checkRem">
                             <label for="checkRem">Remember me</label>
@@ -170,7 +178,7 @@
                         </div>
 
                         <div class="button__login">
-                        <a class="logIn" type="submit">Log in</a>
+                        <button class="logIn" type="submit">Log in</button>
                         </div>
 
                         <div class="registerNow">
@@ -213,5 +221,6 @@
     </div> 
 </footer>
     
+<script src="login.js"></script>
 </body>
 </html>
